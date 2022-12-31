@@ -1,0 +1,40 @@
+{% extends './layout.html' %}
+
+{% block title %}Register{% endblock %}
+
+{% block customCSS %}
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="col-md-4 offset-md-4">
+
+        <form action="/register" method="post" class="card card-body">
+            <h1>Register!!!</h1>
+            <div class="form-group">
+                <label for="InputUsername" class="form-label mt-2">Username</label>
+                <input name="username" type="text" class="form-control" id="InputUsername" aria-describedby="emailHelp"
+                    placeholder="Enter your username" required>
+            </div>
+            <div class="form-group">
+                <label for="InputEmail" class="form-label mt-2">Email address</label>
+                <input name="email" type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp"
+                    placeholder="Enter your email" required>
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                    else.</small>
+            </div>
+            <div class="form-group">
+                <label for="InputPassword1" class="form-label mt-2">Password</label>
+                <input name="password" type="password" class="form-control mb-2" id="InputPassword1" placeholder="Enter your password"
+                    requifred>
+            </div>
+            <div class="form-group">
+                <label for="InputPassword2" class="form-label mt-2">Confirm Password</label>
+                <input type="password" class="form-control mb-4" id="InputPassword2"
+                    placeholder="Enter your password again" requifred>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

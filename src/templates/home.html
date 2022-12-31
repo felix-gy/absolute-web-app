@@ -1,0 +1,13 @@
+{% extends './layout.html' %}
+
+{% block title %}Login{% endblock %}
+
+{% block customCSS %}
+{% endblock %}
+
+{% block body %}
+<h1> My page </h1>
+<a href="{{ url_for('login') }}">Login</a>
+<a href="{{ url_for('register') }}">Register</a>
+
+{% endblock %}

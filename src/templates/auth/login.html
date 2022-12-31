@@ -1,0 +1,49 @@
+{% extends './layout.html' %}
+
+{% block title %}Login{% endblock %}
+
+{% block customCSS %}
+{% endblock %}
+
+{% block body %}
+<div class="container">
+  <div class="col-md-4 offset-md-4">
+
+    <form action="/login" method="post" class="card card-body">
+      <div class="form-group">
+        <h1>Login!!!</h1>
+        <label for="exampleInputEmail1" class="form-label mt-2">Email address</label>
+        <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+          placeholder="Enter email" required>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1" class="form-label mt-2">Password</label>
+        <input name="password" type="password" class="form-control mb-4" id="exampleInputPassword1" placeholder="Password" requifred>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+</div>
+
+
+
+
+<!--
+<form class="form-signin" action="/login" method="POST">
+    <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+    <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+    <label for="inputEmail" class="sr-only">Email address</label>
+    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" name="email" required autofocus>
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="password" required>
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
+  </form>
+  -->
+{% endblock %}
